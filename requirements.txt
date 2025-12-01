@@ -1,0 +1,12 @@
+torch>=2.0.0
+h5py>=3.8.0
+numpy>=1.21.0
+matplotlib>=3.5.0
+jupyter>=1.0.0
+
+
+
+
+
+
+
