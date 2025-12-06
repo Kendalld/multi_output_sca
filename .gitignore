@@ -1,0 +1,11 @@
+venv/
+venv - Copy/
+.venv_wsl/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+datasets/
+*.h5
+*.pt
+*.npy
+status.txt
