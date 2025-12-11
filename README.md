@@ -50,4 +50,3 @@
 - `SHARED_DIM > 0` can reduce total compute by sharing features across all 256 branches. `200` worked well
 - To switch leakage bit (example): replace `val & 1` with an MSB-style label such as `(val >> 7) & 1`.
 - A CNN option is viable and would work much better for traces that aren't aligned
-
