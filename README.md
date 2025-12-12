@@ -7,10 +7,21 @@
 - ASCAD reference: [ASCAD v1: fixed key](https://github.com/ANSSI-FR/ASCAD/tree/master/ATMEGA_AES_v1/ATM_AES_v1_fixed_key)
 
 ### Setup
+- Install UV: `pip install uv` or `curl -LsSf https://astral.sh/uv/install.sh | sh`
 - Use Python 3.10+.
-- Create/activate a virtual environment.
-- Install dependencies from `requirements.txt`.
+- Create virtual environment and install dependencies:
+  ```bash
+  uv venv
+  source .venv/bin/activate  # On Windows/WSL: source .venv/bin/activate
+  uv pip install -e .
+  ```
+  Or use UV's project mode (recommended):
+  ```bash
+  uv sync
+  ```
 - Run Jupyter from the project root (requirements include `notebook`, `ipykernel`, `ipywidgets`).
+
+**Note:** This project uses UV for dependency management. The old `venv/` directory can be removed after migration.
 
 
 ### Data pipeline
