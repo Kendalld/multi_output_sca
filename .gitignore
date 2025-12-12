@@ -1,7 +1,11 @@
 # Virtual environment
 venv/
-.venv/
+.venv/          # UV creates .venv by default
 env/
+
+# UV
+.uv/
+uv.lock        # Optional: lock file (uncomment if you don't want to commit it)
 
 # Python cache
 __pycache__/
