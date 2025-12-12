@@ -1,5 +1,4 @@
 ### Multi Output Model for Side Channel Analysis
-- 
 - This notebook is an attempt at a replication of Van-Phuc Hoang et al.s work "Efficient Nonprofiled Side-Channel Attack Using
 Multi-Output Classification Neural Network"
 
