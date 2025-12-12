@@ -1,7 +1,8 @@
 [project]
 name = "multi-output-sca"
 version = "0.1.0"
-description = "Multi Output Model for Side Channel Analysis"
+description = "Add your description here"
+readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "torch>=2.0.0",
@@ -14,9 +15,3 @@ dependencies = [
     "notebook>=7.2.0",
     "jupyter>=1.0.0",
 ]
-
-[build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
-
-

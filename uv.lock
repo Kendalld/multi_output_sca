@@ -1497,7 +1497,7 @@ wheels = [
 [[package]]
 name = "multi-output-sca"
 version = "0.1.0"
-source = { editable = "." }
+source = { virtual = "." }
 dependencies = [
     { name = "h5py" },
     { name = "ipykernel" },
