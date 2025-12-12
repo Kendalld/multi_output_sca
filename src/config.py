@@ -2,38 +2,24 @@
 
 import numpy as np
 
-# =============================================================================
-# Model Architecture
-# =============================================================================
 SHARED_DIM = 0              # 0 = no shared layer, try [50, 100, 200]
 BRANCH_LAYER_1 = 20         # Suggested range: [10, 50]
 BRANCH_LAYER_2 = 10         # Suggested range: [5, 25]
 OUTPUT_CLASSES = 2          # Binary classification (LSB leakage model)
 
-# =============================================================================
-# Training Hyperparameters
-# =============================================================================
 LEARNING_RATE = 0.0005      # [1e-5, 1e-2]
 BATCH_SIZE = 100            # [32, 256]
 NUM_EPOCHS = 30             # Researchers see success in ~6 epochs
 
-# =============================================================================
-# Data Configuration
-# =============================================================================
+# Data configuration, ASCAD specific
 NUM_TRACES = 10000          # For ASCAD: 10k -> 50k
 TRACE_START_IDX = 0         # Starting index in dataset
 TARGET_BYTE_IDX = 2         # ASCAD shows 2nd-order leakage at byte index 2
 FILE_PATH = 'datasets/ASCADv1/ASCAD.h5'
 
-# =============================================================================
-# Model Checkpoints
-# =============================================================================
 CHECKPOINT_DIR = 'checkpoints'
 MODEL_FILENAME = 'multi_output_sca.pt'
 
-# =============================================================================
-# AES S-Box Lookup Table
-# =============================================================================
 AES_Sbox = np.array([
     0x63, 0x7c, 0x77, 0x7b, 0xf2, 0x6b, 0x6f, 0xc5, 0x30, 0x01, 0x67, 0x2b, 0xfe, 0xd7, 0xab, 0x76,
     0xca, 0x82, 0xc9, 0x7d, 0xfa, 0x59, 0x47, 0xf0, 0xad, 0xd4, 0xa2, 0xaf, 0x9c, 0xa4, 0x72, 0xc0,
