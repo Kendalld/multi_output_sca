@@ -1,21 +1,4 @@
-
-
 import numpy as np
-
-# =============================================================================
-# Model Architecture
-# =============================================================================
-SHARED_DIM = 0              # 0 = no shared layer, try [50, 100, 200]
-BRANCH_LAYER_1 = 20         # Suggested range: [10, 50]
-BRANCH_LAYER_2 = 10         # Suggested range: [5, 25]
-OUTPUT_CLASSES = 2          # Binary classification (LSB leakage model)
-
-# =============================================================================
-# Training Hyperparameters
-# =============================================================================
-LEARNING_RATE = 0.0005      # [1e-5, 1e-2]
-BATCH_SIZE = 100            # [32, 256]
-NUM_EPOCHS = 30             # Researchers see success in ~6 epochs
 
 # =============================================================================
 # Data Configuration
@@ -29,7 +12,33 @@ FILE_PATH = 'datasets/ASCADv1/ASCAD.h5'
 # Model Checkpoints
 # =============================================================================
 CHECKPOINT_DIR = 'checkpoints'
-MODEL_FILENAME = 'multi_output_sca.pt'
+MLP_MODEL_FILENAME = 'multi_output_sca.pt'
+CNN_MODEL_FILENAME = 'cnn_multi_output_sca.pt'
+
+# =============================================================================
+# MLP Model Hyperparameters
+# =============================================================================
+MLP_SHARED_DIM = 0          # 0 = no shared layer, try [50, 100, 200]
+MLP_BRANCH_LAYER_1 = 20     # Suggested range: [10, 50]
+MLP_BRANCH_LAYER_2 = 10     # Suggested range: [5, 25]
+MLP_OUTPUT_CLASSES = 2      # Binary classification (LSB leakage model)
+MLP_LEARNING_RATE = 0.0001  # [1e-5, 1e-2]
+MLP_BATCH_SIZE = 50         # [32, 256]
+MLP_NUM_EPOCHS = 50         # Researchers see success in ~6 epochs
+
+# =============================================================================
+# CNN Model Hyperparameters
+# =============================================================================
+CNN_FILTERS = 4
+CNN_KERNEL_1 = 32
+CNN_KERNEL_2 = 16
+CNN_POOL_1 = 2
+CNN_POOL_2 = 4
+CNN_INPUT_SIZE = 480
+CNN_OUTPUT_CLASSES = 2      # Binary classification (LSB leakage model)
+CNN_LEARNING_RATE = 0.0001  # [1e-5, 1e-2]
+CNN_BATCH_SIZE = 50
+CNN_NUM_EPOCHS = 50
 
 # =============================================================================
 # AES S-Box Lookup Table

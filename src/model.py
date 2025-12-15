@@ -66,10 +66,10 @@ def load_model(filepath, device='cpu'):
     # Create model with saved architecture
     model = MultiOutputNet(
         input_dim=checkpoint.get('input_dim', config.get('input_dim', 700)),
-        shared_dim=checkpoint.get('shared_dim', config.get('SHARED_DIM', 0)),
-        branch_l1=config.get('BRANCH_LAYER_1', 20),
-        branch_l2=config.get('BRANCH_LAYER_2', 10),
-        output_classes=config.get('OUTPUT_CLASSES', 2)
+        shared_dim=checkpoint.get('shared_dim', config.get('MLP_SHARED_DIM', 0)),
+        branch_l1=config.get('MLP_BRANCH_LAYER_1', 20),
+        branch_l2=config.get('MLP_BRANCH_LAYER_2', 10),
+        output_classes=config.get('MLP_OUTPUT_CLASSES', 2)
     )
     
     model.load_state_dict(checkpoint['model_state_dict'])
