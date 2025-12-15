@@ -1,0 +1,22 @@
+[project]
+name = "multi-output-sca"
+version = "0.1.0"
+description = "Multi Output Model for Side Channel Analysis"
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.0.0",
+    "h5py>=3.8.0",
+    "numpy>=1.24.0",
+    "matplotlib>=3.7.0",
+    "tqdm>=4.65.0",
+    "ipykernel>=6.22.0",
+    "ipywidgets>=8.0.0",
+    "notebook>=7.2.0",
+    "jupyter>=1.0.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
