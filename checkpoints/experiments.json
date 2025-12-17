@@ -1,0 +1,50 @@
+[
+  {
+    "run_id": "mlp_run_005",
+    "timestamp": "2025-12-14T21:00:58",
+    "model_type": "mlp",
+    "checkpoint_path": "checkpoints/mlp_run_005.pt",
+    "config": {
+      "MLP_LEARNING_RATE": 0.0001,
+      "MLP_SHARED_DIM": 0,
+      "MLP_BRANCH_LAYER_1": 20,
+      "MLP_BRANCH_LAYER_2": 10,
+      "MLP_OUTPUT_CLASSES": 2,
+      "NUM_TRACES": 10000,
+      "MLP_NUM_EPOCHS": 50,
+      "MLP_BATCH_SIZE": 1000,
+      "TARGET_BYTE_IDX": 2,
+      "input_dim": 700
+    },
+    "results": {
+      "real_key": 224,
+      "final_rank": 1,
+      "final_score": -0.6560458540916443,
+      "key_recovered": true
+    }
+  },
+  {
+    "run_id": "mlp_run_006",
+    "timestamp": "2025-12-17T20:02:46",
+    "model_type": "mlp",
+    "checkpoint_path": "checkpoints/mlp_run_006.pt",
+    "config": {
+      "MLP_LEARNING_RATE": 0.0001,
+      "MLP_SHARED_DIM": 0,
+      "MLP_BRANCH_LAYER_1": 20,
+      "MLP_BRANCH_LAYER_2": 10,
+      "MLP_OUTPUT_CLASSES": 2,
+      "NUM_TRACES": 10000,
+      "MLP_NUM_EPOCHS": 50,
+      "MLP_BATCH_SIZE": 1000,
+      "TARGET_BYTE_IDX": 2,
+      "input_dim": 700
+    },
+    "results": {
+      "real_key": 224,
+      "final_rank": 1,
+      "final_score": -0.6726236939430237,
+      "key_recovered": true
+    }
+  }
+]
