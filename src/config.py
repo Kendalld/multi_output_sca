@@ -23,7 +23,7 @@ MLP_BRANCH_LAYER_1 = 20     # Suggested range: [10, 50]
 MLP_BRANCH_LAYER_2 = 10     # Suggested range: [5, 25]
 MLP_OUTPUT_CLASSES = 2      # Binary classification (LSB leakage model)
 MLP_LEARNING_RATE = 0.0001  # [1e-5, 1e-2]
-MLP_BATCH_SIZE = 50         # [32, 256]
+MLP_BATCH_SIZE = 1000       # 1000 in paper
 MLP_NUM_EPOCHS = 50         # Researchers see success in ~6 epochs
 
 # =============================================================================

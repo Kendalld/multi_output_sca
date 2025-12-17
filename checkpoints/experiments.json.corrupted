@@ -1,0 +1,26 @@
+[
+  {
+    "run_id": "cnn_run_006",
+    "timestamp": "2025-12-14T20:58:38",
+    "model_type": "cnn",
+    "checkpoint_path": "checkpoints/cnn_run_006.pt",
+    "config": {
+      "CNN_LEARNING_RATE": 0.0001,
+      "CNN_FILTERS": 4,
+      "CNN_KERNEL_1": 32,
+      "CNN_KERNEL_2": 16,
+      "CNN_POOL_1": 2,
+      "CNN_POOL_2": 4,
+      "CNN_INPUT_SIZE": 480,
+      "CNN_BATCH_SIZE": 50,
+      "NUM_TRACES": 10000,
+      "CNN_NUM_EPOCHS": 50,
+      "TARGET_BYTE_IDX": 2,
+      "LR_MAX": 0.001,
+      "LR_PCT_START": 0.3,
+      "LR_DIV_FACTOR": 10,
+      "LR_FINAL_DIV_FACTOR": 25
+    },
+    "results": {
+      "real_key": 224,
+      "final_rank": 
